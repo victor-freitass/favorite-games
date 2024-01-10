@@ -1,0 +1,46 @@
+/*dps decide cor final de tudo.... quero um preto com vermelho, eu ach*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+header {
+    color: #d11616;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #d11616; 
+    width: 100%; /*n muda nd, pois já ocupa 100% da largura que está. Botei para demonstrar mesmo*/
+}
+
+main {
+    background-color: #d11616;
+    min-height: 80vh;
+    padding: 50px;
+}
+
+/*Cards*/
+/*aqui no .game, está 100% centralizado com a section. Veja que n tem espaço maior sobrando pra 
+esquerda. "Calculei" e fiz. Após ter feito o card, ajustado padding e tal com a section, organizei a 
+img da melhor forma. Ficou retangular, como queira. É só se atentar ào padding que tem na div,
+se quiser ocupar toda a largura, coloque width 100%*/
+.game { 
+    height: 351px; 
+    width: 351px;
+    padding: 20px;
+    border: 2px solid ; 
+    margin: 21px;
+    display: inline-block;
+}
+
+.game p, h3 {
+    text-align: center;
+    color: white;
+}
+
+.img {
+    width: 100%;
+    height: 250px;  
+}   /*Cada imagem está sendo renderizada com 307 x 250. Ent só peguei imagens +ou- nesse tamanho*/
