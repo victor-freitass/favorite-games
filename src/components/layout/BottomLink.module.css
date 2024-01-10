@@ -1,0 +1,16 @@
+.btn { /*O link de comprar ficou com cara de botão. */
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+
+    background-color: #700101;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transition: 1s;
+    background-color: #1f0000;
+}

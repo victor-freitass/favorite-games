@@ -1,5 +1,5 @@
-import crash_1 from '../crash_1.jpg';
-import crash_2 from '../crash_2.jpeg';
+import crash_1 from '../crash_1.png';
+import crash_2 from '../crash_2.png';
 
 import cs_1 from '../cs_1.png';
 import cs_2 from '../cs_2.png';

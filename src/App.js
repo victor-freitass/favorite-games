@@ -1,7 +1,7 @@
-import styles from './App.module.css';
-import Footer from './components/generics/Footer';
-
+import Footer from './components/layout/Footer';
 import randonImg from './images/import/Import';
+import styles from './App.module.css';
+import BottomLink from './components/layout/BottomLink';
 
 function App() {
 
@@ -14,11 +14,17 @@ function App() {
       {/* As caixas com os jogos (grid).*/}
       <main>
         <section className='games-container'>
-          <div id="mario" className={styles.game}>
+          {/* <div id="mario" className={styles.game}>
           <img src={randonImg('mario')} alt="mario" className={styles.img} />
             <h3>Nintendo - Mario</h3>
             <p>Um dos jogos que mais joguei...</p>
+          </div> */}
+
+          <div id="mario" className={styles.game}>
+            <img src={randonImg('mario')} alt="mario" className={styles.img}/>
+            <BottomLink link='/mario' name='Nintendo - Mario'/> 
           </div>
+
           <div id="san-andreas" className={styles.game}>
             <img src={randonImg('san')} alt="GTA San Andreas" className={styles.img} />
             <h3>Rockstar - Gta San Andreas</h3>
@@ -41,7 +47,7 @@ function App() {
           </div>
           <div id="cs" className={styles.game}>
             <img src={randonImg('cs')} alt="cs" className={styles.img} />
-            <h3>Valve Corporation - Counter Strike 1.6 </h3>
+            <h3>Valve Corporation - CS 1.6 </h3>
             <p>Um dos jogos que mais joguei...</p>
           </div>
         </section>
