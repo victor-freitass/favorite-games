@@ -6,19 +6,19 @@ import Page from '../../pages/Page';
 
 function LinkToPage ({link, value, paragraph, name}) {
 
-    let Component;
-    if (link === '/mario') Component = Mario;
-    if (link === '/gtav') Component = Mario;
-    if (link === '/san') Component = Mario;
-    if (link === '/cs') Component = Mario;
-    if (link === '/crash') Component = Mario;
-    if (link === '/minecraft') Component = Mario;
+    // let Component;
+    // if (link === '/mario') Component = Mario;
+    // if (link === '/gtav') Component = Mario;
+    // if (link === '/san') Component = Mario;
+    // if (link === '/cs') Component = Mario;
+    // if (link === '/crash') Component = Mario;
+    // if (link === '/minecraft') Component = Mario;
 
     return (
         <BrowserRouter>
         <Link to={link} className={style.btn}>{value}</Link>
         <Routes>
-            <Route exact path={link} element={<Component/>} />
+            <Route exact path={link} element={<Page paragraph={paragraph} name={name}/>} />
         </Routes>
         </BrowserRouter>
     )    

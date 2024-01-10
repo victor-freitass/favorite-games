@@ -20,34 +20,55 @@ function App() {
               link='/mario' 
               name="mario" 
               value='Nintendo - Mario'
-              paragraph=""
+              paragraph="Zerei Word, se não me engano, 3 também.
+              Viciante, trilha sonora  fantástica, visualmente agradável."
             /> 
           </div>
 
           <div id="san-andreas" className={styles.game}>
             <img src={randonImg('san')} alt="GTA San Andreas" className={styles.img} />
-            <h3>Rockstar - Gta San Andreas</h3>
-            <p>Um dos jogos que mais joguei...</p>
+            <LinkToPage 
+              link='/san' 
+              name="san" 
+              value='Rockstar - GtA San Andreas'
+              paragraph="Jogo mais jogado de todos. SAMP era top."
+            />
           </div>
           <div id="crash" className={styles.game}>
             <img src={randonImg('crash')} alt="crash" className={styles.img} />
-            <h3>Naughty Dog - Crash Bandicoot</h3>
-            <p>Um dos jogos que mais joguei...</p>
+            <LinkToPage 
+              link='/crash' 
+              name="crash" 
+              value='Rockstar - GtA San Andreas'
+              paragraph="Jogo mais jogado de todos. "
+            />
           </div>
           <div id="minecraft" className={styles.game}>
             <img src={randonImg('minecraft')} alt="minecraft" className={styles.img} />
-            <h3>Mojang/Microsoft - Minecraft</h3>
-            <p>Um dos jogos que mais joguei...</p>
+            <LinkToPage 
+              link='/mine' 
+              name="mine" 
+              value='MOJANG - Minecraft'
+              paragraph="O melhor jogo de todos. Infinito e criativo."
+            />
           </div>
           <div id="gtav" className={styles.game}>
             <img src={randonImg('gta')} alt="GTA V" className={styles.img} />
-            <h3>Rockstar - GTA V</h3>
-            <p>Um dos jogos que mais joguei...</p>
+            <LinkToPage 
+              link='/gtav' 
+              name="gtaV" 
+              value='Rockstar - GTA V'
+              paragraph="Fantástico para a época, e esperando o 6 em 2025. "
+            />
           </div>
           <div id="cs" className={styles.game}>
             <img src={randonImg('cs')} alt="cs" className={styles.img} />
-            <h3>Valve Corporation - CS 1.6 </h3>
-            <p>Um dos jogos que mais joguei...</p>
+            <LinkToPage 
+              link='/cs' 
+              name="cs" 
+              value='Valve Corporation - CS 1.6'
+              paragraph="Clássico, dono das Lan Houses."
+            />
           </div>
         </section>
       </main>
