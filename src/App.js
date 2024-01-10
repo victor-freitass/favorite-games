@@ -1,7 +1,7 @@
 import Footer from './components/layout/Footer';
 import randonImg from './images/import/Import';
 import styles from './App.module.css';
-import BottomLink from './components/layout/BottomLink';
+import LinkToPage from './components/layout/LinkToPage';
 
 function App() {
 
@@ -14,15 +14,14 @@ function App() {
       {/* As caixas com os jogos (grid).*/}
       <main>
         <section className='games-container'>
-          {/* <div id="mario" className={styles.game}>
-          <img src={randonImg('mario')} alt="mario" className={styles.img} />
-            <h3>Nintendo - Mario</h3>
-            <p>Um dos jogos que mais joguei...</p>
-          </div> */}
-
           <div id="mario" className={styles.game}>
             <img src={randonImg('mario')} alt="mario" className={styles.img}/>
-            <BottomLink link='/mario' name='Nintendo - Mario'/> 
+            <LinkToPage 
+              link='/mario' 
+              name="mario" 
+              value='Nintendo - Mario'
+              paragraph=""
+            /> 
           </div>
 
           <div id="san-andreas" className={styles.game}>

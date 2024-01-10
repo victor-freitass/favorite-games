@@ -1,8 +1,10 @@
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom'; 
 import Mario from '../../pages/Mario';
-import style from './BottomLink.module.css';
+import style from './LinkToPage.module.css';
 
-function BottomLink ({link, name}) {
+import Page from '../../pages/Page';
+
+function LinkToPage ({link, value, paragraph, name}) {
 
     let Component;
     if (link === '/mario') Component = Mario;
@@ -14,7 +16,7 @@ function BottomLink ({link, name}) {
 
     return (
         <BrowserRouter>
-        <Link to={link} className={style.btn}>{name}</Link>
+        <Link to={link} className={style.btn}>{value}</Link>
         <Routes>
             <Route exact path={link} element={<Component/>} />
         </Routes>
@@ -22,4 +24,4 @@ function BottomLink ({link, name}) {
     )    
 } 
 
-export default BottomLink;
+export default LinkToPage;
