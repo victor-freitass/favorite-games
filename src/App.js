@@ -1,34 +1,47 @@
 import styles from './App.module.css';
 import Footer from './components/generics/Footer';
 
+import randonImg from './images/import/Import';
+
 function App() {
+
   return (
     <div className="App">
       {/* Cabeçalho */}
       <header>
         <h1>Meu jogos nostálgicos</h1>
       </header>
-      {/* As caixas com os jogos (grid) */}
+      {/* As caixas com os jogos (grid).*/}
       <main>
         <section className='games-container'>
           <div id="mario" className={styles.game}>
-          <img src="https://pngimg.com/uploads/mario/mario_PNG7.png" alt="mario" className={styles.img} />
+          <img src={randonImg('mario')} alt="mario" className={styles.img} />
             <h3>Nintendo - Mario</h3>
             <p>Um dos jogos que mais joguei...</p>
           </div>
           <div id="san-andreas" className={styles.game}>
-            <img src="https://pngimg.com/uploads/gta/gta_PNG12.png" alt="san-andreas" className={styles.img} />
-            <h3>Nintendo - Mario</h3>
+            <img src={randonImg('san')} alt="GTA San Andreas" className={styles.img} />
+            <h3>Rockstar - Gta San Andreas</h3>
             <p>Um dos jogos que mais joguei...</p>
           </div>
           <div id="crash" className={styles.game}>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBLawPrAwfjlXhDOMehOXVv2DTMHWd7L_a5g&usqp=CAU" alt="crash" className={styles.img} />
-            <h3>Nintendo - Mario</h3>
+            <img src={randonImg('crash')} alt="crash" className={styles.img} />
+            <h3>Naughty Dog - Crash Bandicoot</h3>
             <p>Um dos jogos que mais joguei...</p>
           </div>
           <div id="minecraft" className={styles.game}>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBLawPrAwfjlXhDOMehOXVv2DTMHWd7L_a5g&usqp=CAU" alt="minecraft" className={styles.img} />
-            <h3>Nintendo - Mario</h3>
+            <img src={randonImg('minecraft')} alt="minecraft" className={styles.img} />
+            <h3>Mojang/Microsoft - Minecraft</h3>
+            <p>Um dos jogos que mais joguei...</p>
+          </div>
+          <div id="gtav" className={styles.game}>
+            <img src={randonImg('gta')} alt="GTA V" className={styles.img} />
+            <h3>Rockstar - GTA V</h3>
+            <p>Um dos jogos que mais joguei...</p>
+          </div>
+          <div id="cs" className={styles.game}>
+            <img src={randonImg('cs')} alt="cs" className={styles.img} />
+            <h3>Valve Corporation - Counter Strike 1.6 </h3>
             <p>Um dos jogos que mais joguei...</p>
           </div>
         </section>
