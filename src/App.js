@@ -17,8 +17,7 @@ function App() {
               link='/mario'
               name="mario"
               value='Nintendo - Mario'
-              paragraph="Zerei Word, se não me engano, 3 também.
-              Viciante, trilha sonora  fantástica, visualmente agradável."
+              paragraph="Perfeito. Som, visual, jogo, história, etc. Tudo perfeito."
             />
           </div>
 
@@ -28,7 +27,7 @@ function App() {
               link='/san'
               name="san"
               value='Rockstar - GtA San Andreas'
-              paragraph="Jogo mais jogado de todos. SAMP era top."
+              paragraph="Jogo mais jogado de todos. Melhor história dos hames, sem dúvida."
             />
           </div>
           <div id="crash" className={styles.game}>
@@ -37,7 +36,7 @@ function App() {
               link='/crash'
               name="crash"
               value='Naughty Dog - Crash Bandicoot'
-              paragraph="O melhor jogo da era PS1, sem dúvida"
+              paragraph="O melhor jogo da era PS1. O melhor gameplay que já tive."
             />
           </div>
           <div id="minecraft" className={styles.game}>
@@ -46,7 +45,7 @@ function App() {
               link='/mine'
               name="mine"
               value='MOJANG - Minecraft'
-              paragraph="O melhor jogo de todos. Infinito e criativo."
+              paragraph="O melhor jogo de todos. Infinito e criativo. O melhor no online."
             />
           </div>
           <div id="gtav" className={styles.game}>
@@ -64,7 +63,7 @@ function App() {
               link='/cs'
               name="cs"
               value='Valve Corporation - CS 1.6'
-              paragraph="Clássico, dono das Lan Houses."
+              paragraph="Clássico, dono das Lan Houses, desafiador demais no Online."
             />
           </div>
         </section>

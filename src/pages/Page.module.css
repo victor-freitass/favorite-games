@@ -1,3 +1,9 @@
 #p {
     color: aqua
 }
+
+#img {
+    height: 150px;
+    position: relative;
+    left: 75px;
+}
