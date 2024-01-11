@@ -2,46 +2,13 @@ import Footer from './components/layout/Footer';
 import randonImg from './images/import/Import';
 import styles from './App.module.css';
 import LinkToPage from './components/layout/LinkToPage';
-import { fight, marioCoin, marioBox } from './images/import/Import';
-import { useRef, useEffect } from 'react';
-import coinSound from './coinSound.mp3';
+import Header from './components/layout/Header';
 
 function App() {
 
-  const ref = useRef(null);
-
-  let boxHeader
-  useEffect(() => {
-    boxHeader = ref.current;
-  }, []);
-
-  function showCoin() {
-    new Audio(coinSound).play();
-    boxHeader.setAttribute('src', marioCoin);
-    setTimeout(() => {
-      boxHeader.setAttribute('src', marioBox);
-    }, 150);
-
-  }
-
   return (
     <div className="App">
-      {/* Cabeçalho */}
-      <header>
-        <h1>My Nostalgic Games
-          <img
-            src={marioBox}
-            alt="Mario Mistery Box"
-            id={styles.imgHeader}
-            ref={ref}
-            onClick={showCoin}
-          />
-        </h1>
-        {/* <ReactAudioPlayer
-          src={coinSound}
-        /> */}
-      </header>
-      {/* As caixas com os jogos (grid).*/}
+      <Header />
       <main>
         <section className='games-container'>
           <div id="mario" className={styles.game}>

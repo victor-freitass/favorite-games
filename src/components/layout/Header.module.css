@@ -1,0 +1,16 @@
+header {
+    color: #d11616;
+    text-align: center;
+    padding: 15px;
+}
+
+header h1 {
+    position: relative;
+    top: -5px;
+}
+
+#imgHeader {
+    height: 40px;
+    position: relative;
+    top: 10px;
+}
