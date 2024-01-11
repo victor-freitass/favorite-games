@@ -1,4 +1,4 @@
-import style from './Mario.module.css';
+import style from './Page.module.css';
 import {useRef, useEffect} from 'react';
 
 function Page ({paragraph, name}) {
@@ -52,7 +52,6 @@ function Page ({paragraph, name}) {
                 alt={`${name} GIF"`} 
                 name='imgs' 
                 ref={ref}
-                id={style.img} 
                 onClick={click} 
                 onMouseOver={changeGif} 
             />
