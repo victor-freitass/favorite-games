@@ -2,71 +2,100 @@ import Footer from './components/layout/Footer';
 import randonImg from './images/import/Import';
 import styles from './App.module.css';
 import LinkToPage from './components/layout/LinkToPage';
-import { fight, marioIcon, marioBox } from './images/import/Import';
+import { fight, marioCoin, marioBox } from './images/import/Import';
+import { useRef, useEffect } from 'react';
+import coinSound from './coinSound.mp3';
 
 function App() {
+
+  const ref = useRef(null);
+
+  let boxHeader
+  useEffect(() => {
+    boxHeader = ref.current;
+  }, []);
+
+  function showCoin() {
+    new Audio(coinSound).play();
+    boxHeader.setAttribute('src', marioCoin);
+    setTimeout(() => {
+      boxHeader.setAttribute('src', marioBox);
+    }, 150);
+
+  }
 
   return (
     <div className="App">
       {/* Cabeçalho */}
       <header>
-      <h1>My Nostalgic Games<img src={fight} alt="logo" id={styles.imgHeader} /></h1>
+        <h1>My Nostalgic Games
+          <img
+            src={marioBox}
+            alt="Mario Mistery Box"
+            id={styles.imgHeader}
+            ref={ref}
+            onClick={showCoin}
+          />
+        </h1>
+        {/* <ReactAudioPlayer
+          src={coinSound}
+        /> */}
       </header>
       {/* As caixas com os jogos (grid).*/}
       <main>
         <section className='games-container'>
           <div id="mario" className={styles.game}>
-            <img src={randonImg('mario')} alt="mario" className={styles.img}/>
-            <LinkToPage 
-              link='/mario' 
-              name="mario" 
+            <img src={randonImg('mario')} alt="mario" className={styles.img} />
+            <LinkToPage
+              link='/mario'
+              name="mario"
               value='Nintendo - Mario'
               paragraph="Zerei Word, se não me engano, 3 também.
               Viciante, trilha sonora  fantástica, visualmente agradável."
-            /> 
+            />
           </div>
 
           <div id="san-andreas" className={styles.game}>
             <img src={randonImg('san')} alt="GTA San Andreas" className={styles.img} />
-            <LinkToPage 
-              link='/san' 
-              name="san" 
+            <LinkToPage
+              link='/san'
+              name="san"
               value='Rockstar - GtA San Andreas'
               paragraph="Jogo mais jogado de todos. SAMP era top."
             />
           </div>
           <div id="crash" className={styles.game}>
             <img src={randonImg('crash')} alt="crash" className={styles.img} />
-            <LinkToPage 
-              link='/crash' 
-              name="crash" 
+            <LinkToPage
+              link='/crash'
+              name="crash"
               value='Naughty Dog - Crash Bandicoot'
               paragraph="O melhor jogo da era PS1, sem dúvida"
             />
           </div>
           <div id="minecraft" className={styles.game}>
             <img src={randonImg('minecraft')} alt="minecraft" className={styles.img} />
-            <LinkToPage 
-              link='/mine' 
-              name="mine" 
+            <LinkToPage
+              link='/mine'
+              name="mine"
               value='MOJANG - Minecraft'
               paragraph="O melhor jogo de todos. Infinito e criativo."
             />
           </div>
           <div id="gtav" className={styles.game}>
             <img src={randonImg('gta')} alt="GTA V" className={styles.img} />
-            <LinkToPage 
-              link='/gtav' 
-              name="gtaV" 
+            <LinkToPage
+              link='/gtav'
+              name="gtaV"
               value='Rockstar - GTA V'
               paragraph="Fantástico para a época, e esperando o 6 em 2025. "
             />
           </div>
           <div id="cs" className={styles.game}>
             <img src={randonImg('cs')} alt="cs" className={styles.img} />
-            <LinkToPage 
-              link='/cs' 
-              name="cs" 
+            <LinkToPage
+              link='/cs'
+              name="cs"
               value='Valve Corporation - CS 1.6'
               paragraph="Clássico, dono das Lan Houses."
             />
