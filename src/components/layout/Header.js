@@ -13,11 +13,13 @@ function Header() {
     }, []);
 
     function showCoin() {
-        new Audio(coinSound).play();
+        const audio = new Audio(coinSound);
+        audio.volume = 0.2;
+        audio.play();
         boxHeader.setAttribute('src', marioCoin);
-        setTimeout(() => {
-            boxHeader.setAttribute('src', marioBox);
-        }, 150);
+            setTimeout(() => {
+                boxHeader.setAttribute('src', marioBox);
+            }, 150);
     }
 
     return (
