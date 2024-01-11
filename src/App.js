@@ -2,6 +2,7 @@ import Footer from './components/layout/Footer';
 import randonImg from './images/import/Import';
 import styles from './App.module.css';
 import LinkToPage from './components/layout/LinkToPage';
+import { fight, marioIcon, marioBox } from './images/import/Import';
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
     <div className="App">
       {/* Cabeçalho */}
       <header>
-        <h1>Meu jogos nostálgicos</h1>
+      <h1>My Nostalgic Games<img src={fight} alt="logo" id={styles.imgHeader} /></h1>
       </header>
       {/* As caixas com os jogos (grid).*/}
       <main>
@@ -39,8 +40,8 @@ function App() {
             <LinkToPage 
               link='/crash' 
               name="crash" 
-              value='Rockstar - GtA San Andreas'
-              paragraph="Jogo mais jogado de todos. "
+              value='Naughty Dog - Crash Bandicoot'
+              paragraph="O melhor jogo da era PS1, sem dúvida"
             />
           </div>
           <div id="minecraft" className={styles.game}>

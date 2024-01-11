@@ -1,5 +1,10 @@
+import marioBox from '../mario-box.png';
+import marioIcon from '../mario-icon.png';
+import fight from '../gifs/fight.gif';
+
 import crash_1 from '../crash_1.png';
 import crash_2 from '../crash_2.png';
+import crash_3 from '../crash_3.png';
 
 import cs_1 from '../cs_1.png';
 import cs_2 from '../cs_2.png';
@@ -23,13 +28,14 @@ import minecraft_4 from '../minecraft_4.png';
 
 import san_1 from '../san_1.png';
 import san_2 from '../san_2.png';
+import san_3 from '../san_3.png';
 
 const csImgs = [ cs_1, cs_2, cs_3, cs_4 ];
-const crashImgs = [ crash_1, crash_2 ];
+const crashImgs = [ crash_1, crash_2, crash_3 ];
 const gtaImgs = [ gta_1, gta_2, gta_3, gta_4];
 const minecraftImgs = [ minecraft_1, minecraft_2, minecraft_3, minecraft_4 ];
 const marioImgs = [ mario_1, mario_2, mario_3, mario_4 ];
-const sanImgs = [ san_1, san_2 ];
+const sanImgs = [ san_1, san_2, san_3 ];
 
 function randonImg (name) {
     let images = [];
@@ -49,3 +55,4 @@ function randonImg (name) {
 }
 
 export default randonImg;
+export { marioBox, marioIcon, fight };

@@ -11,8 +11,15 @@ header {
     color: #d11616;
     text-align: center;
     padding: 15px;
-    border: 1px solid #d11616; 
-    width: 100%; /*n muda nd, pois já ocupa 100% da largura que está. Botei para demonstrar mesmo*/
+}
+
+header h1 {
+    position: relative;
+    top: -20px;
+}
+
+#imgHeader {
+    height: 75px;
 }
 
 main {
