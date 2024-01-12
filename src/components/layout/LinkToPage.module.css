@@ -1,4 +1,4 @@
-.btn { 
+#btn { 
     display: block;
     width: 100%;
     text-align: center;
@@ -10,7 +10,8 @@
     border-radius: 5px;
 }
 
-.btn:hover {
+#btn:hover {
     transition: 1s;
     background-color: #1f0000;
 }
+

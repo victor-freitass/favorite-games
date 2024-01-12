@@ -47,7 +47,7 @@ function Header() {
  
     return (
         <header>
-            <h1>
+            <h1 id='headerid' >
                 <img 
                     src={marioRunning} 
                     alt="Mario Running" 

@@ -3,13 +3,15 @@ import randonImg from './images/import/Import';
 import styles from './App.module.css';
 import LinkToPage from './components/layout/LinkToPage';
 import Header from './components/layout/Header';
+import ThemeButton from './components/Theme';
 
 function App() {
 
   return (
-    <div className={styles.App}>
+    <div className={styles.App} id='principal-div'>
       <Header />
-      <main>
+      <main id='mainid'>
+        < ThemeButton/>
         <section className='games-container'>
           <div id="mario" className={styles.game}>
             <img src={randonImg('mario')} alt="mario" className={styles.img} />
@@ -26,7 +28,7 @@ function App() {
             <LinkToPage
               link='/san'
               name="san"
-              value='Rockstar - GtA San Andreas'
+              value='Rockstar - GTA San Andreas'
               paragraph="Jogo mais jogado de todos. Melhor história dos hames, sem dúvida."
             />
           </div>
@@ -92,7 +94,7 @@ function App() {
             <LinkToPage
               link='/btf'
               name="btf"
-              value='DICE/EA- Battlefield 4'
+              value='DICE/EA - Battlefield 4'
               paragraph="O melhor jogo de guerra. História fantástica."
             />
           </div>

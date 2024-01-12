@@ -53,7 +53,7 @@ function Page ({paragraph, name}) { /*Essa é a div que vem*/
         <div className={style.page}>
             <br /><br /><br />
 
-            <p id={style.p}>
+            <p id={style.p} className='paragraph'>
                 {paragraph}
             </p>
 

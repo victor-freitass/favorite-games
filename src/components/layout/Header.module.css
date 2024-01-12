@@ -2,6 +2,7 @@ header {
     color: #d11616;
     text-align: center;
     padding: 15px;
+    border-bottom: 3px solid #700101;
 }
 
 header h1 {

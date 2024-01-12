@@ -1,0 +1,17 @@
+img {
+    height: 40px;
+}
+
+button {
+    background-color: transparent;
+    border-radius: 5px;
+    position: relative;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+button:hover {
+    transition: 1s;
+    background-color: #700101;
+}

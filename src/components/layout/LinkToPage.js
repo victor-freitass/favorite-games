@@ -7,7 +7,7 @@ function LinkToPage ({link, value, paragraph, name}) {
 
     return (
         <BrowserRouter>
-        <Link to={link} className={style.btn}>{value}</Link>
+        <Link to={link} className='link' id={style.btn} >{value}</Link>
         <Routes>
             <Route exact path={link} element={<Page paragraph={paragraph} name={name}/>} />
         </Routes>
