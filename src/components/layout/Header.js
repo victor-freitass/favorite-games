@@ -1,4 +1,4 @@
-import { marioCoin, marioBox, marioRunning } from '../../images/import/Import';
+import { marioCoin, marioBox, marioRunning, marioTwoFingers } from '../../images/import/Import';
 import { useRef, useEffect } from 'react';
 import coinSound from './coinSound.mp3';
 import styles from './Header.module.css'
@@ -40,6 +40,11 @@ function Header() {
             }, 150);
     };
 
+    function twoFingersAction () {
+        clearInterval(interval);
+        marioHeader.setAttribute('src', marioTwoFingers);
+    }
+ 
     return (
         <header>
             <h1>
@@ -48,6 +53,7 @@ function Header() {
                     alt="Mario Running" 
                     id={styles.marioRunning}
                     ref={marioRef}
+                    onClick={twoFingersAction}
                 />
                 My Nostalgic Games
                 <img

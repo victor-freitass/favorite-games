@@ -1,6 +1,7 @@
 import marioBox from '../mario-box.png';
 import marioCoin from '../mario-icon.png';
 import marioRunning from '../gifs/mario.gif';
+import marioTwoFingers from '../marioTwoFingers.png';
 
 import crash_1 from '../crash_1.png';
 import crash_2 from '../crash_2.png';
@@ -70,4 +71,4 @@ function randonImg (name) {
 }
 
 export default randonImg;
-export { marioBox, marioCoin, marioRunning };
+export { marioBox, marioCoin, marioRunning, marioTwoFingers };
