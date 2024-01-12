@@ -7,7 +7,7 @@ import Header from './components/layout/Header';
 function App() {
 
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Header />
       <main>
         <section className='games-container'>
