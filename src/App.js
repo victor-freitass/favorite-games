@@ -66,6 +66,37 @@ function App() {
               paragraph="Clássico, dono das Lan Houses, desafiador demais no Online."
             />
           </div>
+
+          <div id="tkf" className={styles.game}>
+            <img src={randonImg('tkf')} alt="The King Of Fighters" className={styles.img} />
+            <LinkToPage
+              link='/tkf'
+              name="tkf"
+              value='SNK - The King of Fighters 2002'
+              paragraph="Líder do fliperama. O melhor x1 de todos os tempos."
+            />
+          </div>
+
+          <div id="gc" className={styles.game}>
+            <img src={randonImg('gc')} alt="Grand Chase" className={styles.img} />
+            <LinkToPage
+              link='/gc'
+              name="gc"
+              value='KOG Studios - Grand Chase'
+              paragraph="Também conheci na Lan House, ótimo online 2000s."
+            />
+          </div>
+
+          <div id="btf" className={styles.game}>
+            <img src={randonImg('btf')} alt="Battlefield 4" className={styles.img} />
+            <LinkToPage
+              link='/btf'
+              name="btf"
+              value='DICE/EA- Battlefield 4'
+              paragraph="O melhor jogo de guerra. História fantástica."
+            />
+          </div>
+
         </section>
       </main>
       {/* Footer. Dx em componente, pois vai entrar em mts lugares */}

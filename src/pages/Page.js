@@ -25,6 +25,12 @@ function Page ({paragraph, name}) { /*Essa é a div que vem*/
     const csGif_2 = require('../images/gifs/cs_2.gif');
     const gtaVGif_1 = require('../images/gifs/gta_1.gif');
     const gtaVGif_2 = require('../images/gifs/gta_2.gif');
+    const gcGif_1 = require('../images/gifs/gc_1.gif');
+    const gcGif_2 = require('../images/gifs/gc_2.gif');
+    const tkfGif_1 = require('../images/gifs/tk_1.gif');
+    const tkfGif_2 = require('../images/gifs/tk_2.gif');
+    const btfGif_1 = require('../images/gifs/btf_2.gif');
+    const btfGif_2 = require('../images/gifs/btf_1.gif');
 
     let gif = [];
     
@@ -34,6 +40,9 @@ function Page ({paragraph, name}) { /*Essa é a div que vem*/
     if (name === 'san') gif.push(sanGif_1, sanGif_2);
     if (name === 'cs') gif.push(csGif_1, csGif_2);
     if (name === 'gtaV') gif.push(gtaVGif_1, gtaVGif_2);
+    if (name === 'gc') gif.push(gcGif_1, gcGif_2);
+    if (name === 'tkf') gif.push(tkfGif_1, tkfGif_2);
+    if (name === 'btf') gif.push(btfGif_1, btfGif_2);
 
     function changeGif () {
         imageElement.getAttribute('src') === gif[0] ? 
