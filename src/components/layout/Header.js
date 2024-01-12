@@ -1,4 +1,4 @@
-import { marioCoin, marioBox } from '../../images/import/Import';
+import { marioCoin, marioBox, marioRunning } from '../../images/import/Import';
 import { useRef, useEffect } from 'react';
 import coinSound from './coinSound.mp3';
 import styles from './Header.module.css'
@@ -6,11 +6,29 @@ import styles from './Header.module.css'
 function Header() {
 
     const ref = useRef(null);
+    const marioRef = useRef(null);
 
-    let boxHeader
+    let boxHeader;
     useEffect(() => {
         boxHeader = ref.current;
+        }, []);
+
+    let marioHeader; 
+    useEffect(() => {
+        marioHeader = marioRef.current;
     }, []);
+
+    let pixel = 467; 
+    const interval = setInterval(() => {
+        if (marioHeader) {
+            pixel--;
+            marioHeader.style.right = pixel + 'px';
+        }
+    }, 50);
+
+    setTimeout(() => {
+        clearInterval(interval)
+    }, 23000);
 
     function showCoin() {
         const audio = new Audio(coinSound);
@@ -20,11 +38,18 @@ function Header() {
             setTimeout(() => {
                 boxHeader.setAttribute('src', marioBox);
             }, 150);
-    }
+    };
 
     return (
         <header>
-            <h1>My Nostalgic Games
+            <h1>
+                <img 
+                    src={marioRunning} 
+                    alt="Mario Running" 
+                    id={styles.marioRunning}
+                    ref={marioRef}
+                />
+                My Nostalgic Games
                 <img
                     src={marioBox}
                     alt="Mario Mistery Box"
