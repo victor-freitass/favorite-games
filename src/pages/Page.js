@@ -1,7 +1,7 @@
 import style from './Page.module.css';
 import {useRef, useEffect} from 'react';
 
-function Page ({paragraph, name}) {
+function Page ({paragraph, name}) { /*Essa é a div que vem*/ 
     const ref = useRef(null);
 
     let imageElement;
@@ -26,7 +26,7 @@ function Page ({paragraph, name}) {
     const gtaVGif_1 = require('../images/gifs/gta_1.gif');
     const gtaVGif_2 = require('../images/gifs/gta_2.gif');
 
-    let gif = []
+    let gif = [];
     
     if (name === 'mario') gif.push(marioGif_1, marioGif_2);
     if (name === 'crash') gif.push(crashGif_1, crashGif_2);
@@ -41,8 +41,9 @@ function Page ({paragraph, name}) {
     }
 
     return (
-        <div>
+        <div className={style.page}>
             <br /><br /><br />
+
             <p id={style.p}>
                 {paragraph}
             </p>
