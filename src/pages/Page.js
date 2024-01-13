@@ -1,7 +1,7 @@
 import style from './Page.module.css';
 import {useRef, useEffect} from 'react';
 
-function Page ({paragraph, name}) { /*Essa é a div que vem*/ 
+function Page ({paragraph, name}) {
     const ref = useRef(null);
 
     let imageElement;

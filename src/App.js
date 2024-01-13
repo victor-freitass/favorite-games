@@ -101,7 +101,6 @@ function App() {
 
         </section>
       </main>
-      {/* Footer. Dx em componente, pois vai entrar em mts lugares */}
       <Footer />
     </div>
   );

@@ -16,11 +16,6 @@ main {
     padding: 50px;
 }
 
-/*Cards*/
-/*aqui no .game, está 100% centralizado com a section. Veja que n tem espaço maior sobrando pra 
-esquerda. "Calculei" e fiz. Após ter feito o card, ajustado padding e tal com a section, organizei a 
-img da melhor forma. Ficou retangular, como queira. É só se atentar ào padding que tem na div,
-se quiser ocupar toda a largura, coloque width 100%*/
 .game { 
     height: 351px; 
     width: 351px;
@@ -38,4 +33,4 @@ se quiser ocupar toda a largura, coloque width 100%*/
 .img { 
     width: 100%;
     height: 250px;  
-}   /*Cada imagem está sendo renderizada com 307 x 250. Ent só peguei imagens +ou- nesse tamanho*/
+}

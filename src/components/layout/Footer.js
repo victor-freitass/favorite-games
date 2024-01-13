@@ -1,5 +1,3 @@
-import './Footer.module.css';
-
 function Footer () {
     return (
         <footer>
