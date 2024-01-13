@@ -1,11 +1,10 @@
-import {useRef, useEffect} from 'react';
 import darkTheme from '../images/darkTheme.png';
 import lightTheme from '../images/lightTheme.png';
-import  './Theme.module.css';
+import './Theme.module.css';
 
-function ThemeButton () {
+function ThemeButton() {
+    function ChangeTheme() {
 
-    function changeTheme() {
         const imgTheme = document.querySelector('#img-theme');
         const App = document.querySelector('#principal-div');
         const main = document.querySelector('#mainid');
@@ -13,31 +12,31 @@ function ThemeButton () {
         const links = document.getElementsByClassName('link');
         const paragraphs = document.getElementsByClassName('paragraph');
 
-        if(imgTheme.getAttribute('src') === darkTheme) {
+        if (imgTheme.getAttribute('src') === darkTheme) {
             imgTheme.setAttribute('src', lightTheme);
             App.style.backgroundColor = '#6688aa';
             main.style.backgroundColor = '#333344';
             header.style.color = '#333344';
-            console.log(links);
-            links.forEach(l => {
-                l.style.backgroundColor = '0a0a0e';
-            })
-            /*0a0a0e*/ 
+
+            for (let i = 0; i < links.length; i++) {
+                links[i].style.backgroundColor = '#28283b';
+            }
 
         } else {
-            imgTheme.setAttribute('src', darkTheme);
-            /*tem como so voltar como era ao invés de definir tudo novamente?*/ 
+            imgTheme.setAttribute('src', darkTheme); /*reset javascript css. back to css default */ 
+            main.style.backgroundColor = null;
+            App.style.backgroundColor = null;
+            header.style.color = null;
 
+            for (let i = 0; i < links.length; i++) {
+                links[i].style.backgroundColor = null;
+            }
         }
-
-        /*faz as cores no config... cores ligh/dark. É um objeto q vai retornar geral... organiza ai
-        ao abrir um novo link, tme q verificar se o tema é dark ou n. Bota isso por causa dos p.*/ 
-
     }
 
     return (
         <button
-            onClick={changeTheme}
+            onClick={ChangeTheme}
         >
             <img
                 src={darkTheme}
