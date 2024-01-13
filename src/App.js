@@ -29,7 +29,7 @@ function App() {
               link='/san'
               name="san"
               value='Rockstar - GTA San Andreas'
-              paragraph="Jogo mais jogado de todos. Melhor história dos hames, sem dúvida."
+              paragraph="Jogo mais jogado de todos. Melhor história dos games, sem dúvida."
             />
           </div>
           <div id="crash" className={styles.game}>
