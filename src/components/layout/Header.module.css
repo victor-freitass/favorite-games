@@ -21,3 +21,30 @@ header h1 {
     position: relative;
     right: 467px;
 }
+
+@media (min-width: 1024px) {
+    header {
+        color: #d11616;
+        text-align: center;
+        padding: 15px;
+        border-bottom: 3px solid #700101;
+    }
+    
+    header h1 {
+        position: relative;
+        top: -5px;
+    }
+    
+    #imgHeader {
+        height: 40px;
+        position: relative;
+        top: 10px;
+    }
+    
+    #marioRunning {
+        height: 40px;
+        position: relative;
+        right: 467px;
+    }
+
+}
