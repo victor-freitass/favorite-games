@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/favorite-games/static/css/main.992831df.css",
+    "main.css": "/favorite-games/static/css/main.b513bf0b.css",
     "main.js": "/favorite-games/static/js/main.25ff54e1.js",
     "static/media/gc_2.gif": "/favorite-games/static/media/gc_2.ba7222e57559bb41716a.gif",
     "static/media/gc_1.gif": "/favorite-games/static/media/gc_1.f7513a7022b4842cda29.gif",
@@ -62,11 +62,11 @@
     "static/media/coinSound.mp3": "/favorite-games/static/media/coinSound.ce760789d1f86e58ff29.mp3",
     "static/media/marioTwoFingers.png": "/favorite-games/static/media/marioTwoFingers.e89970f578cf8debdf12.png",
     "index.html": "/favorite-games/index.html",
-    "main.992831df.css.map": "/favorite-games/static/css/main.992831df.css.map",
+    "main.b513bf0b.css.map": "/favorite-games/static/css/main.b513bf0b.css.map",
     "main.25ff54e1.js.map": "/favorite-games/static/js/main.25ff54e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.992831df.css",
+    "static/css/main.b513bf0b.css",
     "static/js/main.25ff54e1.js"
   ]
 }
